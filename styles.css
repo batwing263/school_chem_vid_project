@@ -3,7 +3,9 @@
 *::before {
     box-sizing: border-box;
 }
-
+.proj-photo img {
+    display: none;
+}
 body {
     margin: 0;
     min-height: 100vh;
@@ -93,6 +95,8 @@ body {
 
 .flex {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer div a img{
@@ -120,7 +124,7 @@ footer div a img{
 }
 .body h1 {
     color: #000;
-    font-family: "Helvetica Neue";
+    font-family: "Inter";
     font-size: 35px;
     font-style: normal;
     font-weight: 700;
@@ -132,14 +136,9 @@ footer div a img{
     text-decoration: underline;
     text-decoration-color: #F3641F;
 }
-.body img {
-    width: 1167px;
-    height: 500px;
-    flex-shrink: 0;
-}
 .body h2 {
     color: #000;
-    font-family: "Helvetica Neue";
+    font-family: "Inter";
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
@@ -149,11 +148,18 @@ footer div a img{
 }
 .body h3 {
     color: #000;
-    font-family: "Helvetica Neue";
+    font-family: "Inter";
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    text-decoration-color: #F3641F;
+}
+.proj-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,7 +190,7 @@ footer div a img{
 }
 .body p {
     color: #000;
-    font-family: "Helvetica Neue";
+    font-family: "Inter";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -193,12 +199,34 @@ footer div a img{
 }
 .body li {
     color: #000;
-    font-family: "Helvetica Neue";
+    font-family: "Inter";
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     padding: 5px 60px 5px 60px;
+}
+.btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px;
+}
+.btn-rpr-back img {
+    width: 250px;
+    height: 35px;
+    flex-shrink: 0;
+    
+}
+.btn-rp-next img {
+    width: 150px;
+    height: 35px;
+    flex-shrink: 0;
+    
+}
+.p-10 {
+    padding: 10px 10px 10px 10px;
 }
 footer {
     
@@ -227,6 +255,87 @@ footer p {
     justify-content: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
+.logo {
+    width: 223px;
+    height: 240px;
+    flex-shrink: 0;
+}
+.ham-menu {
+    display: none;
+}
+.sidebar {
+    display: none;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-size img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px 10px 10px;
+}
+.vid {
+    width: 950px;
+    height: 534px;
+    flex-shrink: 0;
+    border-radius: 35px;
+    border: 2px solid #000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+}
+.about-photo img{
+    width: 1167px;
+    height: 500px;
+    flex-shrink: 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.body li {
+    padding: 0 150px 0 150px;
+}
+.body p {
+    padding: 0 150px 0 150px;
+}
+.btn-rpr-back img {
+    width: 295px;
+    height: 60.737px;
+    flex-shrink: 0;
     
+}
+.btn-rp-next img {
+    width: 295px;
+    height: 60.737px;
+    flex-shrink: 0;
+    
+}
+.proj-page-photos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+footer div a img{
+    
+    flex-direction: row;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px 10px 10px;
+    
+}
+footer {
+    display: block;
+}
+footer p {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 }
